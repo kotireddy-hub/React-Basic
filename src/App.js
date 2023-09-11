@@ -1,5 +1,7 @@
 import './App.css';
 import HelloWorld from './HelloWorld';
+import Counter from './pages/components/Counter';
+import CounterFun from './pages/components/CounterFun';
 import UserDeatils from './pages/UserDeatils';
 
 const listOfData = ["HTML","React","CSS","Javascript"];
@@ -25,6 +27,8 @@ function App() {
     <div className="App">
       <HelloWorld data={listOfData} />
       <UserDeatils users={UserData}/>
+      <Counter />
+      <CounterFun />
     </div>
   );
 }
