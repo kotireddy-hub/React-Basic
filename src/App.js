@@ -2,7 +2,9 @@ import './App.css';
 import HelloWorld from './HelloWorld';
 import Counter from './pages/components/Counter';
 import CounterFun from './pages/components/CounterFun';
+import InitialCounter from './pages/components/InitialCounter';
 import UserDeatils from './pages/UserDeatils';
+
 
 const listOfData = ["HTML","React","CSS","Javascript"];
 
@@ -18,6 +20,10 @@ const UserData = [
   {
     "name":"Nari",
     "age":26
+  },
+  {
+    "name":"Koti",
+    "age":30
   }
 ]
 
@@ -25,10 +31,11 @@ const UserData = [
 function App() {
   return (
     <div className="App">
-      <HelloWorld data={listOfData} />
+      {/* <HelloWorld data={listOfData} />
       <UserDeatils users={UserData}/>
       <Counter />
-      <CounterFun />
+      <CounterFun /> */}
+      <InitialCounter />
     </div>
   );
 }
