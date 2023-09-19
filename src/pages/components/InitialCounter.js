@@ -10,16 +10,22 @@ class InitialCounter extends Component {
     }
     increment(){
         //if(this.state.count < 10){
-        this.setState({
+       /* this.setState({
             count:this.state.count + 1
-        })
+        })*/
+        this.setState((prv) => ({
+            count: prv.count + 1
+        }))
    // }
     }
     decrement(){
      //   if(this.state.count > 0){
-        this.setState({
+        /*this.setState({
             count:this.state.count - 1
-        })
+        })*/
+        this.setState((prv) => ({
+            count: prv.count - 1
+        }))
     //}
     }
 

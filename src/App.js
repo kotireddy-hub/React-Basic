@@ -1,9 +1,13 @@
 import './App.css';
 import HelloWorld from './HelloWorld';
+import ComponentLifeCycle from './pages/components/ComponentLifeCycleMethod';
 import Counter from './pages/components/Counter';
 import CounterFun from './pages/components/CounterFun';
+import FunctionalCounter from './pages/components/FunCtionalTimeComponent';
 import InitialCounter from './pages/components/InitialCounter';
+import TimerComponentWithLifeCycle from './pages/components/TimerComponentWithLifeCycle';
 import UserDeatils from './pages/UserDeatils';
+
 
 
 const listOfData = ["HTML","React","CSS","Javascript"];
@@ -36,6 +40,8 @@ function App() {
       <Counter />
       <CounterFun /> */}
       <InitialCounter />
+      {/* <TimerComponentWithLifeCycle /> */}
+      <FunctionalCounter />
     </div>
   );
 }
