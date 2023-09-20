@@ -6,6 +6,7 @@ import CounterFun from './pages/components/CounterFun';
 import FunctionalCounter from './pages/components/FunCtionalTimeComponent';
 import InitialCounter from './pages/components/InitialCounter';
 import TimerComponentWithLifeCycle from './pages/components/TimerComponentWithLifeCycle';
+import TimeStartStopReset from './pages/components/TimeStartStopReset';
 import UserDeatils from './pages/UserDeatils';
 
 
@@ -39,9 +40,10 @@ function App() {
       <UserDeatils users={UserData}/>
       <Counter />
       <CounterFun /> */}
-      <InitialCounter />
+      {/* <InitialCounter /> */}
       {/* <TimerComponentWithLifeCycle /> */}
-      <FunctionalCounter />
+      {/* <FunctionalCounter /> */}
+      <TimeStartStopReset />
     </div>
   );
 }
