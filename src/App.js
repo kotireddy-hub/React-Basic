@@ -9,6 +9,7 @@ import Greeting from './pages/components/Greeting';
 import InitialCounter from './pages/components/InitialCounter';
 import TimerComponentWithLifeCycle from './pages/components/TimerComponentWithLifeCycle';
 import TimeStartStopReset from './pages/components/TimeStartStopReset';
+import UnControlComponentInput from './pages/components/UnControlComponentInput';
 import UserDeatils from './pages/UserDeatils';
 
 
@@ -45,9 +46,10 @@ function App() {
       {/* <InitialCounter /> */}
       {/* <TimerComponentWithLifeCycle /> */}
       {/* <FunctionalCounter /> */}
-      <TimeStartStopReset />
-      <ConditionRendering logined={true} />
-      <Greeting logined={true} />
+      {/* <TimeStartStopReset /> */}
+      {/* <ConditionRendering logined={true} /> */}
+      {/* <Greeting logined={true} /> */}
+      <UnControlComponentInput />
     </div>
   );
 }

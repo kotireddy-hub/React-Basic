@@ -28,6 +28,7 @@ class Greeting extends React.Component {
                 isLoggedIn ? <div>ON</div> : <div>OFF</div>
             }
             <button onClick={() => this.handleToClick()}>Login</button>
+            <input type="text"/>
         </div>
         /* const isLoggined = this.props.logined;
          if (isLoggined) {
