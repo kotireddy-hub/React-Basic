@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-const UnControlComponentInput = () => {
+/*const UnControlComponentInput = () => {
     const inputRef = useRef(null);
 
     const handleToSubmit = (e) => {
@@ -17,6 +17,30 @@ const UnControlComponentInput = () => {
         <button type="submit">Click</button>
     </form>
 
-};
+};*/
+
+class UnControlComponentInput extends React.Component{
+    constructor(){
+        super();
+        this.inputRef=React.createRef();
+        this.handleToSubmit = this.handleToSubmit.bind(this);
+    }
+
+    handleToSubmit(e) {
+        e.preventDefault();
+        console.log("hello",this.inputRef.current.value)
+    }
+
+    render(){
+        return <form onSubmit={this.handleToSubmit}>
+            <input
+            type={"text"}
+            name={"inputRef"}
+            ref={this.inputRef}
+            />
+            <button type="submit">Click</button>
+        </form>
+    }
+}
 
 export default UnControlComponentInput;

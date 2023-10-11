@@ -7,12 +7,13 @@ import CounterFun from './pages/components/CounterFun';
 import FunctionalCounter from './pages/components/FunCtionalTimeComponent';
 import Greeting from './pages/components/Greeting';
 import InitialCounter from './pages/components/InitialCounter';
+import NavigationCompoent from './pages/components/Navigation';
+import RouterCompoent from './pages/components/Router';
 import TimerComponentWithLifeCycle from './pages/components/TimerComponentWithLifeCycle';
 import TimeStartStopReset from './pages/components/TimeStartStopReset';
 import UnControlComponentInput from './pages/components/UnControlComponentInput';
 import UserDeatils from './pages/UserDeatils';
-
-
+import { BrowserRouter } from "react-router-dom"
 
 const listOfData = ["HTML", "React", "CSS", "Javascript"];
 
@@ -50,6 +51,7 @@ function App() {
       {/* <ConditionRendering logined={true} /> */}
       {/* <Greeting logined={true} /> */}
       <UnControlComponentInput />
+      <RouterCompoent />
     </div>
   );
 }
