@@ -51,7 +51,7 @@ function App() {
       {/* <ConditionRendering logined={true} /> */}
       {/* <Greeting logined={true} /> */}
       <UnControlComponentInput />
-      <RouterCompoent />
+      {/* <RouterCompoent /> */}
     </div>
   );
 }

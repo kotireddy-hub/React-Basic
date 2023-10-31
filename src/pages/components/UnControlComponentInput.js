@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import UseStateFun from "./UseStateFun";
+
 
 /*const UnControlComponentInput = () => {
     const inputRef = useRef(null);
@@ -39,6 +41,7 @@ class UnControlComponentInput extends React.Component{
             ref={this.inputRef}
             />
             <button type="submit">Click</button>
+            <UseStateFun />
         </form>
     }
 }
